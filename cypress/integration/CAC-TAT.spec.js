@@ -10,7 +10,7 @@ describe('Central de Atendimento ao Cliente TAT', function(){
         })
     })
     it('preenche os campos obrigatórios e envia o formulário', function(){
-        cy.get('[id=firstName]').type('Lorena')
+        cy.get('input[id="firstName"]').type('Lorena')
        /* cy.get('//*[@id="lastName"]').type('Lopes')
         cy.get('//*[@id="email"]').type('lorenalpsantos@gmail.com')
         cy.get('//*[@id="open-text-area"]').type('Olá! Gostaria de mais informações sobre o curso.')
