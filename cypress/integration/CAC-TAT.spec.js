@@ -10,7 +10,12 @@ describe('Central de Atendimento ao Cliente TAT', function(){
         })
     })
     it('preenche os campos obrigatórios e envia o formulário', function(){
-
+        cy.get('#firstName').type('Lorena')
+        cy.get('#lastName').type('Lopes')
+        cy.get('#email').type('lorenalpsantos@gmail.com')
+        cy.get('#open-text-area').type('Olá! Gostaria de mais informações sobre o curso.')
+        cy.get('.button').click()
+        cy.get('.sucess').should('be.visible')
 
    })
 })  
